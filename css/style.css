@@ -17,6 +17,7 @@ body {
   line-height: 1.7;
   color: #4d4d4d;
   background: #fff;
+  overflow-y: scroll;
 }
 
 #page {
@@ -84,15 +85,22 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #FF9000;
 }
 
+header{
+  transform-style: inherit;
+
+}
+
+
 #fh5co-header,
 .fh5co-cover {
   background-color: transparent;
   background-size: cover;
-  background-attachment: fixed;
   position: relative;
-  height: 600px;
+  min-height: 100vh;
   width: 100%;
 }
+
+
 #fh5co-header .overlay,
 .fh5co-cover .overlay {
   position: absolute;
@@ -100,8 +108,10 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url('images/background.jpg');
+  background-image: url('images/bg.jpg');
+
 }
+
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
   width: 100%;
@@ -111,8 +121,11 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-cover .display-tc {
   display: table-cell;
   vertical-align: middle;
-  height: 600px;
+  height: 100vh;
+  width: 100%;
+
 }
+
 #fh5co-header .display-tc h1, #fh5co-header .display-tc h2, #fh5co-header .display-tc h3,
 .fh5co-cover .display-tc h1,
 .fh5co-cover .display-tc h2,
@@ -121,6 +134,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   color: white;
 }
+
 #fh5co-header .display-tc h1,
 .fh5co-cover .display-tc h1 {
   font-family: "Kaushan Script", cursive;
@@ -147,8 +161,9 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 30px;
   height: 4px;
   content: '';
-  background: #fff;
+  background #fff;
   margin-left: -30px;
+
 }
 #fh5co-header .display-tc h1 span:after,
 .fh5co-cover .display-tc h1 span:after {
@@ -222,7 +237,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-features {
-  background: #FF9000;
+  background: #06020c;
+
+
 }
 #fh5co-features h2 {
   color: #fff;
