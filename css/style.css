@@ -305,6 +305,8 @@ header{
 #fh5co-features .feature-left .feature-copy {
   width: 100%;
 }
+
+.feature-copy{display: inline-block;}
 #fh5co-features .feature-left h3 {
   font-size: 24px;
   font-weight: 400;
@@ -1339,4 +1341,7 @@ input[type="text"] {
   opacity: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+output {
+    display: inline;
+    unicode-bidi: -webkit-isolate;
+}
