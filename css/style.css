@@ -52,11 +52,35 @@ a {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+
 }
 a:hover, a:active, a:focus {
   color: #FF9000;
   outline: none;
   text-decoration: none;
+  animation:var(--animation);
+}
+
+.enter { 
+margin-top: 3em; 
+padding: 1em; 
+--border: 1pt solid #fff;
+--color-enter: #FC8F68;
+font-size: 1em;
+letter-spacing: 3px;
+cursor: pointer;
+white-space: pre;
+pointer-events: auto;
+padding: 1em;
+}
+
+.enter:hover{
+  border:var(--border);
+}
+
+.enter:focus, .enter:hover{
+  border:var(--border);
+
 }
 
 p {
@@ -129,9 +153,9 @@ header{
 .fh5co-cover .display-tc h1,
 .fh5co-cover .display-tc h2,
 .fh5co-cover .display-tc h3 {
-  margin: 0;
+  margin: 0; 
   padding: 0;
-  color: black;
+  color: #fff;
 }
 
 #fh5co-header .display-tc h1,
@@ -160,7 +184,7 @@ header{
   width: 30px;
   height: 4px;
   content: '';
-  background : black;
+  background : #fff;
   margin-left: -30px;
 
 }
@@ -172,7 +196,7 @@ header{
   width: 30px;
   height: 4px;
   content: '';
-  background: black;
+  background: #fff;
   margin-right: -30px;
 }
 @media screen and (max-width: 768px) {
@@ -204,6 +228,8 @@ header{
 #fh5co-header .display-tc h3,
 .fh5co-cover .display-tc h3 {
   font-size: 16px;
+  padding-bottom: 5em;
+
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h3,
@@ -236,12 +262,13 @@ header{
 }
 
 #fh5co-features {
-  background: #06020c;
+  background: #2F3C4F;
 
 
 }
 #fh5co-features h2 {
-  color: #000;
+  color: #fff;
+  border: 1pt solid white;
 }
 #fh5co-features .services-padding {
   padding: 7em 0;
@@ -324,10 +351,10 @@ header{
 
 .fh5co-bg-dark {
   background: #2F3C4F;
-  background: #FF9000;
 }
+
 .fh5co-bg-dark .fh5co-heading h2 {
-  color: #fff !important;
+  color: #fff;
 }
 
 .info {
@@ -402,13 +429,13 @@ header{
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 #fh5co-about .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   color: #fff;
   background: #2F3C4F;
   padding: 10px 10px 2px 10px;
@@ -820,7 +847,7 @@ header{
   height: 54px;
   border: none !important;
   background: #fff;
-  color: #FF9000;
+  color: #000;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -997,9 +1024,12 @@ header{
 }
 
 #fh5co-footer {
-  padding: 50px 0;
+  padding: 2em 0;
   float: left;
   width: 100%;
+  color: #FC8F68;
+  text-align:center;
+  
 }
 #fh5co-footer p:last-child {
   margin-bottom: 0;
