@@ -20,6 +20,11 @@ body {
   overflow-y: scroll;
 }
 
+@font-face {
+ font-family: "Molleat";
+ src: url("fonts/Molleat.otf") format("truetype");
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
